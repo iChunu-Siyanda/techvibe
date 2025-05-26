@@ -1,0 +1,78 @@
+
+/*This sectin is to reset the browser style, always start with this.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*For the body always set the font-family. line-height, and the font color.(FLC).*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*We all containers in the website to have these dimensions. It is a standard.*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*box-shadow ensures that the box looks elevated, like it is floating.
+For the navbar, footer, and etc. Always include position:sticky/fixed; top:0; and x-index:100;*/
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /*adds space in between the logo and nav-elements.*/
+    align-items: center; /*centers the two elements(logo and menu-elements) in the big container.*/
+    height: 70px;
+}
+
+.logo {
+    color: #22529e;
+    font-size: 24px;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px; /*This adds spacing between the menu bar elements.*/
+    align-items: center;  /*centers the elements in its own container not the big container.*/
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #22529e;
+}
+
+/*Creates an outside box*/
+.cart-link {
+    background-color: #14a1b9;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.cart-link:hover {
+    background-color: #2563eb;
+}
+/*Navbar done.*/
